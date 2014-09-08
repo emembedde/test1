@@ -1,4 +1,4 @@
-TaskPaper Mode:
+Edited locally test TaskPaper Mode:
 Editorial 1.1 supports the .taskpaper Todo list format, invented by Hog Bay Software (http://hogbaysoftware.com/products/taskpaper).
 	
 To create a task, type a line starting with a dash.
@@ -16,6 +16,7 @@ In Editorial's settings, you can associate tags with color labels. Some tags, li
 	- This one is red @flagged 
 
 	- This task should be blue  @today
+	- Edited locally @now
 Tips:
 You can rearrange tasks by dragging the right margin.
 In the iPad version of Editorial, you can tap the checkbox next to a task to automatically add/remove the @done tag.
