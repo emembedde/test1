@@ -17,7 +17,7 @@ In Editorial's settings, you can associate tags with color labels. Some tags, li
 
 	- This task should be blue  @today
 	- Edited locally @now
-	- Anothet line added THIS HAS NOW CHanged at 15:11
+	- Another line added this has now changed at 15:11 @done(2014-09-08)
 	- And another, can I only cmmit this line? NO this was also added why?
 Tips:
 You can rearrange tasks by dragging the right margin.
