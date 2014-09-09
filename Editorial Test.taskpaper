@@ -11,6 +11,7 @@ The special @done tag is used to mark finished tasks.
 
 To insert a project header, simply type a line that ends with a colon (':'). Projects can also have tags.
 
+
 Color Labels:
 In Editorial's settings, you can associate tags with color labels. Some tags, like @due, @flagged, and @today have default colors, but you can easily change this.
 	- This one is red @flagged 
