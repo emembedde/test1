@@ -51,8 +51,6 @@ pre[cm-flagged],
 pre[cm-priority],
 pre[cm-overdue],
 pre[cm-urgent],
-pre[cm-late],
-pre[cm-bs],
 pre[cm-important],
 pre[cm-high] {
 	span[class~=cm-text] {
@@ -60,107 +58,48 @@ pre[cm-high] {
 	}
 }
 
-// MB added DEEP PINK for alerts
-// *****************************
-pre[cm-reminder],
-pre[cm-notify],
-pre[cm-alarm],
-pre[cm-alert] span.cm-text {
-    color: deeppink;
-}
-
-
 // MB Added ORANGE
 // *****************
-pre[cm-today],
 pre[cm-soon],
 pre[cm-now],
 pre[cm-due] span.cm-text {
     color: orange;
 }
 
-// MB Added DEEP SKY BLUE for review
-// **********************************
-pre[cm-review],
-pre[cm-followup],
-pre[cm-test],
-pre[cm-code],
-pre[cm-check] span.cm-text {
- color: deepskyblue;
-}
 
-// MB Added bgd for post review or completed items
-// and a strikethrough
-// *****************************
-
-pre[cm-rev],
-pre[cm-fin],
-pre[cm-cmp],
-pre[cm-reviewed],
-pre[cm-finished],
-pre[cm-completed] {
-	span[class~=cm-text] {
-		color: slategray;
-		background: whitesmoke;
-    	text-decoration: line-through;
-		&.cm-code {
-			background: rgba(49, 49, 49, 0.08);
-		}
-	}
-}
-
-
-// MB Added FIREBRICK for held or waiting or defer
-// ************************************************
+// MB Added YELLOW
+// ***************
 pre[cm-wait],
+pre[cm-query],
 pre[cm-defer],
-pre[cm-held],
+pre[cm-postpone],
 pre[cm-hold] {
 	span[class~=cm-text] {
-    color: firebrick;
+    color: yellow;
 //		color: rgb(101, 143, 205);
 	}
 }
 
-// ADDED BY MB GRAY
+
+// ADDED BY MB GREEN
 // *****************
-pre[cm-someday],
-pre[cm-postpone],
-pre[cm-low] span.cm-text {
-    color: gray;
+pre[cm-inprogress],
+pre[cm-ready],
+pre[cm-ontarget] span.cm-text {
+    color: green;
 }
 
-// ADDED BY MB BLUE for Projects
-// ******************************
+
+// ADDED BY MB BLUE
+// ****************
 pre[cm-project],
+pre[cm-today],
+pre[cm-todo],
 pre[cm-study] span.cm-text {
     color: blue;
 }
 
-// ADDED BY MB BROWN for cancel 
-// AND add strikethrough
-// *********************************
-pre[cm-cancelled],
-pre[cm-dropped],
-pre[cm-abandoned] span.cm-text {
-
-    color: brown;
-    text-decoration: line-through;
-		&.cm-code {
-			background: rgba(49, 49, 49, 0.08);
-		}
-}
-
-// ADDED BY MB Dark CYAN
-// *********************************
-pre[cm-query],
-pre[cm-how],
-pre[cm-when],
-pre[cm-question] span.cm-text {
-    color: darkcyan;
-}
-
-// ADDED BY MB INDIGO 
+// ADDED BY MB INDIGO (Purple in ED)
 // *********************************
 pre[cm-daily],
 pre[cm-weekly],
@@ -171,12 +110,15 @@ pre[cm-date] span.cm-text {
     color: indigo;
 }
 
-// ADDED BY MB GREEN for in progress
-// *********************************
-pre[cm-inprogress],
-pre[cm-ready],
-pre[cm-ontarget] span.cm-text {
-    color: green;
+
+// ADDED BY MB GRAY
+// *****************
+pre[cm-low],
+pre[cm-someday],
+pre[cm-dropped],
+pre[cm-cancelled],
+pre[cm-low] span.cm-text {
+    color: gray;
 }
 
 
