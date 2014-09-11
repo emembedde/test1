@@ -47,11 +47,8 @@
 
 // MB Added RED
 // ************
-pre[cm-flagged],
 pre[cm-priority],
 pre[cm-overdue],
-pre[cm-urgent],
-pre[cm-important],
 pre[cm-high] {
 	span[class~=cm-text] {
 		color: red;
@@ -60,19 +57,32 @@ pre[cm-high] {
 
 // MB Added ORANGE
 // *****************
+pre[cm-today],
 pre[cm-soon],
-pre[cm-now],
 pre[cm-due] span.cm-text {
-    color: orange;
+    color: darkorange;
 }
 
+// ADDED BY MB PURPLE (called Indigo)
+// *********************************
+pre[cm-nextmonth],
+pre[cm-thisweekend],
+pre[cm-nextweek] span.cm-text {
+    color: indigo;
+}
+
+// ADDED BY MB BLUE
+// ****************
+pre[cm-project],
+pre[cm-todo],
+pre[cm-study] span.cm-text {
+    color: blue;
+}
 
 // MB Added YELLOW (or similar effect)
 // ***********************************
 pre[cm-wait],
-pre[cm-query],
 pre[cm-defer],
-pre[cm-postpone],
 pre[cm-hold] {
 	span[class~=cm-text] {
     color: gold;
@@ -90,33 +100,11 @@ pre[cm-ontarget] span.cm-text {
 }
 
 
-// ADDED BY MB BLUE
-// ****************
-pre[cm-project],
-pre[cm-today],
-pre[cm-todo],
-pre[cm-study] span.cm-text {
-    color: blue;
-}
-
-// ADDED BY MB PURPLE (called Indigo)
-// *********************************
-pre[cm-daily],
-pre[cm-weekly],
-pre[cm-monthly],
-pre[cm-nextmonth],
-pre[cm-nextweek],
-pre[cm-date] span.cm-text {
-    color: indigo;
-}
-
-
 // ADDED BY MB GRAY
 // *****************
 
 pre[cm-someday],
-pre[cm-dropped],
-pre[cm-cancelled],
+pre[cm-future],
 pre[cm-low] span.cm-text {
     color: gray;
 }
@@ -125,7 +113,7 @@ pre[cm-low] span.cm-text {
 // **********************************
 
 pre[cm-completed],
-pre[cm-finished],
+pre[cm-cancelled],
 pre[cm-reviewed] span.cm-text {
     color: olive;
 }
