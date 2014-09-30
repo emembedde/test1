@@ -48,6 +48,8 @@
 // MB Added RED
 // ************
 pre[cm-priority],
+pre[cm-urgent],
+pre[cm-important],
 pre[cm-overdue],
 pre[cm-high] {
 	span[class~=cm-text] {
@@ -58,6 +60,7 @@ pre[cm-high] {
 // MB Added ORANGE
 // *****************
 pre[cm-today],
+pre[cm-tomorrow],
 pre[cm-soon],
 pre[cm-due] span.cm-text {
     color: darkorange;
@@ -75,14 +78,16 @@ pre[cm-nextweek] span.cm-text {
 // ****************
 pre[cm-project],
 pre[cm-todo],
+pre[cm-thisweek],
 pre[cm-study] span.cm-text {
     color: blue;
 }
 
-// MB Added browny yellow or similar
-// ***********************************
+// MB Added browny yellow (peru is good)
+// *************************************
 pre[cm-wait],
 pre[cm-defer],
+pre[cm-later],
 pre[cm-hold] {
 	span[class~=cm-text] {
     color: peru;
@@ -94,6 +99,7 @@ pre[cm-hold] {
 // ADDED BY MB GREEN
 // *****************
 pre[cm-inprogress],
+pre[cm-reviewed],
 pre[cm-ready],
 pre[cm-ontarget] span.cm-text {
     color: green;
@@ -102,19 +108,19 @@ pre[cm-ontarget] span.cm-text {
 
 // ADDED BY MB GRAY
 // *****************
+// Too similar to done tag
 
 pre[cm-someday],
-pre[cm-future],
+pre[cm-maybe],
 pre[cm-low] span.cm-text {
-    color: gray;
+    color: dimgray;
 }
 
 // TEST BY MB Olive is a good colour!
 // **********************************
 
-pre[cm-maybe],
 pre[cm-cancelled],
-pre[cm-reviewed] span.cm-text {
+pre[cm-dropped] span.cm-text {
     color: olive;
 }
 
