@@ -68,6 +68,8 @@ pre[cm-due] span.cm-text {
 
 // ADDED BY MB PURPLE (called Indigo)
 // *********************************
+pre[cm-weekly],
+pre[cm-monthly],
 pre[cm-nextmonth],
 pre[cm-thisweekend],
 pre[cm-nextweek] span.cm-text {
@@ -78,6 +80,7 @@ pre[cm-nextweek] span.cm-text {
 // ****************
 pre[cm-project],
 pre[cm-todo],
+pre[cm-daily],
 pre[cm-thisweek],
 pre[cm-study] span.cm-text {
     color: blue;
@@ -85,12 +88,14 @@ pre[cm-study] span.cm-text {
 
 // MB Added browny yellow (peru is good)
 // *************************************
+pre[cm-waiting],
 pre[cm-wait],
 pre[cm-defer],
 pre[cm-later],
 pre[cm-hold] {
 	span[class~=cm-text] {
-    color: peru;
+    color: #6B4724;
+//    color: peru;
 //		color: rgb(101, 143, 205);
 	}
 }
@@ -103,6 +108,22 @@ pre[cm-reviewed],
 pre[cm-ready],
 pre[cm-ontarget] span.cm-text {
     color: green;
+}
+
+// ADDED BY MB TURQUOISE
+// *********************
+pre[cm-followup],
+pre[cm-query] {
+// pre[cm-query] span.cm-text {
+    color: turquoise;
+}
+
+// ADDED BY MB pink
+// *********************
+pre[cm-avoid],
+pre[cm-expensive] {
+// pre[cm-query] {
+    color: deeppink;
 }
 
 
@@ -119,6 +140,7 @@ pre[cm-low] span.cm-text {
 // TEST BY MB Olive is a good colour!
 // **********************************
 
+pre[cm-actioned],
 pre[cm-cancelled],
 pre[cm-archived],
 pre[cm-dropped] span.cm-text {
