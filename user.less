@@ -10,21 +10,30 @@
 //@fontSize: 12pt;
 @fontSize: 13pt;
 
+
 // To change the base "ink" color (used for text) uncomment the following
 // line:
 //@inkColor: black;
 
 // To change the base "paper" color (behind the text) uncomment the following
 // line:
-@paperColor: white; // original, probably the best
+//@paperColor: white; // original, probably the best
 //@paperColor: lavender;
 //@paperColor: beige; // MB
 //@paperColor: cornsilk; // MB
+@paperColor: ivory; // MB
 
 // Removes strikethrough for @done
 pre[cm-done] .cm-text {
   text-decoration: none
 }
+
+pre[cm-actioned] .cm-text {
+  text-decoration: line-through
+}
+
+
+
 // Color used to indicate something. Such as when mouse is over a link.
 //@indicatedColor: blue;
 
